@@ -1,0 +1,6 @@
+{
+	"deno.enablePaths": [
+		"deno"
+	],
+	"elixirLS.projectDir": "elixir"
+}
