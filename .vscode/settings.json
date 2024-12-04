@@ -2,5 +2,14 @@
 	"deno.enablePaths": [
 		"deno"
 	],
-	"elixirLS.projectDir": "elixir"
+	"elixirLS.projectDir": "elixir",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.ts": "never",
+		"source.fixAll.eslint": "never",
+		"source.removeUnused.ts": "never"
+	},
+	"eslint.codeActionsOnSave.mode": "problems",
+	"typescript.format.enable": false,
+	"javascript.format.enable": false,
+	"deno.enable": false
 }

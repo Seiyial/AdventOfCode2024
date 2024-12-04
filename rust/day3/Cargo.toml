@@ -5,3 +5,5 @@ edition = "2021"
 
 [dependencies]
 aoc = { path = "../aoc" }
+regex = "1.11.1"
+regex-lite = "0.1.6"

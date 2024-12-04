@@ -15,6 +15,7 @@ fn solve(input: String) -> Result<u64, Error> {
     let mut sum: u64 = 0;
     let mut do_crawl = true;
     for start_index in 0..characters.len() {
+        // ignore this match block if you're doing 3-1. For 3-2, include this match block
         match characters[start_index] {
             'd' if !do_crawl => {
                 // this may throw but welp if it really throws we'll fix it
