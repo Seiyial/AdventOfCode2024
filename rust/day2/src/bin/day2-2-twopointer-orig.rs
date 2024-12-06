@@ -5,7 +5,7 @@ use std::{
 
 use day2::printer;
 
-fn to_2d_array(input: String) -> Vec<Vec<u32>> {
+fn to_2d_array_by_whitespace(input: String) -> Vec<Vec<u32>> {
     input
         .split("\n")
         .map(|row| {
@@ -36,7 +36,7 @@ fn expect(delta_type: i32) {
 }
 
 fn solve(input: String) -> Result<i32, Error> {
-    let aoa: Vec<Vec<u32>> = to_2d_array(input);
+    let aoa: Vec<Vec<u32>> = to_2d_array_by_whitespace(input);
 
     let ans = aoa.clone().into_iter().enumerate().fold(
         HashSet::<usize>::new(),

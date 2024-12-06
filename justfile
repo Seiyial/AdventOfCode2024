@@ -1,6 +1,7 @@
 set quiet
 set working-directory := "."
 set dotenv-load
+set shell := ["zsh", "-cu"]
 
 bun DAY PUZZLE TESTORACTUAL='t':
   echo "Bun :: day {{DAY}} :: {{PUZZLE}}"
@@ -20,5 +21,6 @@ rustnew DAY:
   mkdir src/bin && touch src/bin/day{{DAY}}-1.rs && touch src/bin/day{{DAY}}-2.rs
 
 inputsnew DAY:
-  cd _inputs && touch day{{DAY}}-t.txt && touch day{{DAY}}-t2.txt && touch day{{DAY}}-a.txt && curl -H "cookie: session=${AOC_SITE_COOKIE_FOR_FETCH}" https://adventofcode.com/2024/day/{{trim_end_match(s, 0)}}/input | day{{DAY}}-a.txt
+  cd _inputs && touch day{{DAY}}-t.txt && touch day{{DAY}}-t2.txt && touch day{{DAY}}-a.txt && curl -H "cookie: session=${AOC_SITE_COOKIE_FOR_FETCH}" https://adventofcode.com/2024/day/{{DAY}}/input > day{{DAY}}-a.txt
 
+alias inputnew := inputsnew

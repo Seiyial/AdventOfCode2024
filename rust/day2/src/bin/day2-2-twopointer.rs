@@ -2,7 +2,7 @@ use std::io::{self, Error};
 
 use day2::printer;
 
-fn to_2d_array(input: String) -> Vec<Vec<u32>> {
+fn to_2d_array_by_whitespace(input: String) -> Vec<Vec<u32>> {
     input
         .split("\n")
         .map(|row| {
@@ -40,7 +40,7 @@ fn is_abs_within_bounds(delta: i32) -> bool {
 }
 
 fn solve(input: String) -> Result<i32, Error> {
-    let aoa: Vec<Vec<u32>> = to_2d_array(input);
+    let aoa: Vec<Vec<u32>> = to_2d_array_by_whitespace(input);
     let ans = aoa
         .clone()
         .into_iter()

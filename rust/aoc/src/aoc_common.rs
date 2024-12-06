@@ -5,7 +5,7 @@ pub fn to_lines(input: String) -> Vec<String> {
     input.lines().map(|line| line.to_string()).collect()
 }
 
-pub fn to_2d_array<ParseIntoType: FromStr>(input: String) -> Vec<Vec<ParseIntoType>>
+pub fn to_2d_array_by_whitespace<ParseIntoType: FromStr>(input: String) -> Vec<Vec<ParseIntoType>>
 where
     ParseIntoType: FromStr<Err: Debug>,
 {

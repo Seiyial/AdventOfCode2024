@@ -17,7 +17,7 @@ fn is_safe(delta: i32, delta_type: i32) -> bool {
 }
 
 fn solve(input: String) -> Result<i32, Error> {
-    let aoa: Vec<Vec<u32>> = aoc_common::to_2d_array::<u32>(input);
+    let aoa: Vec<Vec<u32>> = aoc_common::to_2d_array_by_whitespace::<u32>(input);
     let ans = aoa
         .clone()
         .into_iter()
