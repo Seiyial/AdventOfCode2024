@@ -16,7 +16,7 @@ just getinputs 7
 just rust 7 2 a
 ```
 
-Running other solutions, say, `rust/src/bin/day6-2-res-2.rs` instead of `rust/src/bin/day6-2.rs`, where the files are available:
+Running other solutions, say, `rust/src/bin/day6-2-res-2.rs` instead of `rust/src/bin/day6-2.rs`, if files are available:
 ```sh
 just rust 6 2-res-2 a
 # just suffix everything after the day and part number
