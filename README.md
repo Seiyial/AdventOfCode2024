@@ -11,7 +11,7 @@ Recommended Dependency:
 # install rust: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # if can't run rust, reopen terminal/IDE; ensure ~/.cargo/bin is in PATH
 
-echo "SESSION_COOKIE=your_cookie" > .env
+echo "AOC_SITE_COOKIE_FOR_FETCH=your_cookie" > .env
 just getinputs 7
 just rust 7 2 a
 ```
