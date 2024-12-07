@@ -1,5 +1,9 @@
 Recommended Dependency:
-- [casey/just](https://github.com/casey/just): Task runner for Mac, Win, Linux. You can install it using `brew install just` on macOS, `winget install --id=Casey.Just -e` on Windows, `cargo install just` or visit the github link for more options.
+- [casey/just](https://github.com/casey/just): Task runner for Mac, Win, Linux.
+	- MacOS: `brew install just`
+	- Windows: `winget install --id=Casey.Just -e`
+	- Mac/Win/Linux: `cargo install just`
+	- Other options: [see GitHub page installation section](https://github.com/casey/just#installation)
 
 ## TL;DW
 
