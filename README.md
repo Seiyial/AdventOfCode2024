@@ -22,7 +22,7 @@ just rust 6 2-res-2 a
 # just suffix everything after the day and part number
 ```
 
-Run with any input data:
+Custom input data, or if you're not using `just getinputs` to get your data:
 ```sh
 vim _inputs/day6-abcde.txt # paste the test data into a new or existing file for that day
 just rust 6 2 abcde
