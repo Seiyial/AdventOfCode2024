@@ -1,10 +1,11 @@
 [package]
-name = "day6"
+name = "day7"
 version = "0.1.0"
 edition = "2021"
+resolver = "2"
 
 [dependencies]
 aoc = { version = "0.1.0", path = "../aoc" }
-anyhow = "1.0.93"
 rayon = { workspace = true }
-clap = { version = "4.5.21", features = ["derive"] }
+itertools = { workspace = true }
+radix_fmt = "1.0.0"
